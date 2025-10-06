@@ -4,18 +4,18 @@ import '../css/about.css';
 const About = () => {
   const stats = [
     {
-      number: "500+",
-      label: "Participants",
-      icon: "👥"
+      number: "17",
+      label: "Years of Excellence",
+      icon: "🏆"
     },
     {
-      number: "20+",
-      label: "Sessions",
-      icon: "📚"
+      number: "2000+",
+      label: "Participants Worldwide",
+      icon: "👤"
     },
     {
-      number: "15+",
-      label: "Speakers",
+      number: "100+",
+      label: "Distinguished Speakers",
       icon: "🎤"
     }
   ];
