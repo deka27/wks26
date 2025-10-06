@@ -5,6 +5,7 @@ import Image from 'next/image'
 // @ts-ignore
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/react-splide/css'
+import '../css/highlights.css';
 
 const Highlights = () => {
   const highlights = [
@@ -41,19 +42,19 @@ const Highlights = () => {
   ];
 
   return (
-    <section id="highlights" className="relative bg-white py-16 sm:py-20 md:py-24 lg:py-32 overflow-hidden">
+    <section id="highlights" className="highlights-section">
       {/* Background Decorative Elements */}
-      <div className="absolute top-1/3 left-0 w-96 h-96 bg-[#F58F00]/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-1/3 right-0 w-96 h-96 bg-[#F58F00]/5 rounded-full blur-3xl"></div>
+      <div className="highlights-decorative-top"></div>
+      <div className="highlights-decorative-bottom"></div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
+      <div className="highlights-container">
         {/* Section Header */}
-        <div className="text-center mb-12 md:mb-16 lg:mb-20">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4">
+        <div className="highlights-header">
+          <h2 className="highlights-title">
             Workshop Highlights
           </h2>
-          <div className="w-20 sm:w-24 md:w-32 h-1 bg-[#F58F00] rounded-full mx-auto mb-6 md:mb-8"></div>
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto">
+          <div className="highlights-title-underline"></div>
+          <p className="highlights-subtitle">
             Explore cutting-edge techniques and methodologies in diffusion MRI analysis
           </p>
         </div>
@@ -78,25 +79,25 @@ const Highlights = () => {
           >
             {highlights.map((highlight, index) => (
               <SplideSlide key={index}>
-                <div className="relative group">
+                <div className="highlights-slide-wrapper">
                   {/* Card Container */}
-                  <div className="bg-white overflow-hidden transition-all duration-500">
+                  <div className="highlights-card-container">
                     {/* Image Container */}
-                    <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] overflow-hidden bg-transparent">
+                    <div className="highlights-image-container">
                       <Image
                         src={highlight.image}
                         alt={highlight.title}
                         fill
-                        className="object-contain group-hover:scale-105 transition-transform duration-700"
+                        className="highlights-image"
                       />
                     </div>
 
                     {/* Content */}
-                    <div className="relative px-6 py-8 sm:px-8 sm:py-10 md:px-12 md:py-12 lg:px-16 lg:py-14 bg-white text-center">
-                      <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-4 md:mb-6 group-hover:text-[#F58F00] transition-colors duration-300">
+                    <div className="highlights-content">
+                      <h3 className="highlights-content-title">
                         {highlight.title}
                       </h3>
-                      <p className="text-lg sm:text-xl md:text-2xl text-gray-800 leading-relaxed font-medium">
+                      <p className="highlights-content-description">
                         {highlight.description}
                       </p>
                     </div>
@@ -109,7 +110,7 @@ const Highlights = () => {
       </div>
 
       {/* Section Separator */}
-      <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#F58F00] to-transparent"></div>
+      <div className="section-separator"></div>
 
       <style jsx global>{`
         .highlights-carousel .splide__track,

@@ -2,6 +2,7 @@
 
 import React from 'react'
 import Image from 'next/image'
+import '../css/schedule.css';
 
 const Schedule = () => {
   const schedule = [
@@ -89,49 +90,49 @@ const Schedule = () => {
   ];
 
   return (
-    <section id="schedule" className="relative bg-white py-12 sm:py-16 md:py-20 lg:py-24">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
+    <section id="schedule" className="schedule-section">
+      <div className="schedule-container">
         {/* Section Header */}
-        <div className="text-center mb-10 md:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-4">
+        <div className="schedule-header">
+          <h2 className="schedule-title">
             Workshop Schedule
           </h2>
-          <div className="w-20 sm:w-24 md:w-32 h-1 bg-[#F58F00] rounded-full mx-auto"></div>
+          <div className="schedule-title-underline"></div>
         </div>
 
         {/* Schedule Grid - 2 columns */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+        <div className="schedule-grid">
           {schedule.map((day, dayIndex) => (
-            <div key={dayIndex} className="relative">
+            <div key={dayIndex} className="schedule-day-column">
               {/* Day Header - Improved visual */}
-              <div className="text-center mb-10">
-                <div className="inline-block">
-                  <h3 className="text-3xl font-bold text-[#F58F00] mb-2 tracking-tight">
+              <div className="schedule-day-header">
+                <div className="schedule-day-header-inner">
+                  <h3 className="schedule-day-title">
                     {day.day}
                   </h3>
-                  <div className="w-full h-0.5 bg-gradient-to-r from-transparent via-[#F58F00] to-transparent mb-2"></div>
-                  <p className="text-lg text-gray-700 font-semibold uppercase tracking-wider">
+                  <div className="schedule-day-underline"></div>
+                  <p className="schedule-day-subtitle">
                     {day.subtitle}
                   </p>
-                  <p className="text-sm text-gray-500 font-medium mt-1">
+                  <p className="schedule-day-date">
                     {day.date}
                   </p>
                 </div>
               </div>
 
               {/* Timeline */}
-              <div className="relative pl-14">
+              <div className="schedule-timeline">
                 {/* Vertical line */}
-                <div className="absolute left-[18px] top-0 bottom-0 w-[3px] bg-[#ebebeb] rounded-full"></div>
+                <div className="schedule-timeline-line"></div>
 
                 {/* Sessions */}
                 {day.sessions.map((session, sessionIndex) => (
-                  <div key={sessionIndex} className="relative mb-2">
+                  <div key={sessionIndex} className="schedule-session">
                     {session.title === 'Lunch Break' ? (
-                      <div className="relative my-8">
-                        <div className="h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent"></div>
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <span className="bg-white px-4 text-sm text-gray-500 font-normal">
+                      <div className="schedule-lunch-break">
+                        <div className="schedule-lunch-line"></div>
+                        <div className="schedule-lunch-overlay">
+                          <span className="schedule-lunch-text">
                             Lunch Break
                           </span>
                         </div>
@@ -139,36 +140,35 @@ const Schedule = () => {
                     ) : (
                       <>
                         {/* Timeline dot - positioned outside card */}
-                        <div className="absolute left-[-42px] top-5 w-[11px] h-[11px] rounded-full bg-[#F58F00] z-10"></div>
+                        <div className="schedule-session-dot"></div>
 
                         {/* Session card */}
-                        <div className="bg-white rounded-xl p-5 mb-2 shadow-[0_0.25rem_1rem_0_rgba(47,91,234,0.125)] border-2 border-[#ebebeb] hover:border-[#F58F00] transition-all duration-500">
+                        <div className="schedule-session-card">
                           {/* Session title */}
-                          <h4 className="text-[17px] font-semibold text-black mb-2.5 leading-tight tracking-tight">
+                          <h4 className="schedule-session-title">
                             {session.title}
                           </h4>
                           
                           {/* Time */}
-                          <p className="text-[13px] text-gray-500 font-medium mb-4 tracking-wide uppercase">
+                          <p className="schedule-session-time">
                             {session.time}
                           </p>
 
                           {/* Speaker with avatar */}
                           {session.speaker && (
-                            <div className="flex items-center">
+                            <div className="schedule-speaker-container">
                               {/* Orange badge with circular cutout for avatar */}
-                              <div className="relative flex items-center h-[32px] bg-[#F58F00] rounded-full opacity-90 pr-4 pl-12">
+                              <div className="schedule-speaker-badge">
                                 {/* Avatar positioned to overlap badge */}
-                                <div className="absolute left-0 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full overflow-hidden border-[5px] border-white shadow-md">
+                                <div className="schedule-speaker-avatar">
                                   <Image
                                     src="/user.jpg"
                                     alt={session.speaker}
                                     fill
-                                    className="object-cover"
                                   />
                                 </div>
                                 {/* Speaker name */}
-                                <span className="text-white text-[14px] font-medium whitespace-nowrap">
+                                <span className="schedule-speaker-name">
                                   {session.speaker}
                                 </span>
                               </div>
@@ -186,7 +186,7 @@ const Schedule = () => {
       </div>
 
       {/* Section Separator */}
-      <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#F58F00] to-transparent"></div>
+      <div className="section-separator"></div>
     </section>
   )
 }

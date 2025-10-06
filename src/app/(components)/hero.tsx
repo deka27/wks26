@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import '../css/hero.css';
 
 const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -53,90 +54,89 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="home" className="relative h-screen w-full overflow-hidden">
+    <section id="home" className="hero-section">
       {/* Background Carousel */}
-      <div className="absolute inset-0">
+      <div className="hero-background-container">
         {images.map((img, index) => (
           <div
             key={img}
-            className={`absolute inset-0 transition-opacity duration-1000 ${
-              index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+            className={`hero-background-image ${
+              index === currentImageIndex ? 'active' : ''
             }`}
           >
             <Image
               src={img}
               alt={`Background ${index + 1}`}
               fill
-              className="object-cover"
               priority={index === 0}
             />
           </div>
         ))}
         {/* Dark overlay for better text readability - reduced opacity for more vibrant images */}
-        <div className="absolute inset-0 bg-black/30" />
+        <div className="hero-overlay" />
       </div>
 
       {/* Content */}
-      <div className="relative h-full flex flex-col justify-between p-4 sm:p-6 md:p-12 lg:p-16 max-w-[85%] mx-auto">
+      <div className="hero-content">
         {/* Top Left - Title and Date */}
-        <div className="mt-20 sm:mt-24 md:mt-28 lg:mt-32">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-3 md:mb-4 tracking-tight leading-tight drop-shadow-2xl">
+        <div className="hero-title-section">
+          <h1 className="hero-title">
             DIPY ONLINE WORKSHOP
           </h1>
-          <div className="w-24 sm:w-32 md:w-40 lg:w-48 h-1 bg-[#F58F00] rounded-full mb-3 md:mb-4"></div>
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl pt-2 text-[#F58F00] font-semibold drop-shadow-lg">
+          <div className="hero-title-underline"></div>
+          <p className="hero-subtitle">
             17th to 21st March 2026 <br /> Bloomington, Indiana
           </p>
         </div>
 
         {/* Bottom Left - Registration Card */}
-        <div className="mb-4 sm:mb-6 md:mb-12">
-          <div className="bg-black/40 backdrop-blur-lg border-2 border-[#F58F00]/50 rounded-2xl p-4 sm:p-6 md:p-8 max-w-full sm:max-w-md lg:max-w-lg shadow-2xl">
-            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-2">
+        <div className="hero-registration-container">
+          <div className="hero-registration-card">
+            <h3 className="hero-registration-title">
               Registrations are Open
             </h3>
-            <p className="text-[#F58F00] mb-4 sm:mb-6 text-sm sm:text-base">Time left to register:</p>
+            <p className="hero-registration-subtitle">Time left to register:</p>
             
             {/* Countdown Timer */}
-            <div className="grid grid-cols-4 gap-2 sm:gap-3 mb-4 sm:mb-6">
-              <div className="text-center">
-                <div className="bg-[#F58F00]/20 backdrop-blur border border-[#F58F00]/40 rounded-lg p-2 sm:p-3 mb-1 sm:mb-2">
-                  <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#F58F00]">
+            <div className="hero-countdown-grid">
+              <div className="hero-countdown-item">
+                <div className="hero-countdown-box">
+                  <span className="hero-countdown-number">
                     {String(timeLeft.days).padStart(2, '0')}
                   </span>
                 </div>
-                <span className="text-[10px] sm:text-xs md:text-sm text-white/80 font-medium">DAYS</span>
+                <span className="hero-countdown-label">DAYS</span>
               </div>
-              <div className="text-center">
-                <div className="bg-[#F58F00]/20 backdrop-blur border border-[#F58F00]/40 rounded-lg p-2 sm:p-3 mb-1 sm:mb-2">
-                  <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#F58F00]">
+              <div className="hero-countdown-item">
+                <div className="hero-countdown-box">
+                  <span className="hero-countdown-number">
                     {String(timeLeft.hours).padStart(2, '0')}
                   </span>
                 </div>
-                <span className="text-[10px] sm:text-xs md:text-sm text-white/80 font-medium">HOURS</span>
+                <span className="hero-countdown-label">HOURS</span>
               </div>
-              <div className="text-center">
-                <div className="bg-[#F58F00]/20 backdrop-blur border border-[#F58F00]/40 rounded-lg p-2 sm:p-3 mb-1 sm:mb-2">
-                  <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#F58F00]">
+              <div className="hero-countdown-item">
+                <div className="hero-countdown-box">
+                  <span className="hero-countdown-number">
                     {String(timeLeft.minutes).padStart(2, '0')}
                   </span>
                 </div>
-                <span className="text-[10px] sm:text-xs md:text-sm text-white/80 font-medium">MINS</span>
+                <span className="hero-countdown-label">MINS</span>
               </div>
-              <div className="text-center">
-                <div className="bg-[#F58F00]/20 backdrop-blur border border-[#F58F00]/40 rounded-lg p-2 sm:p-3 mb-1 sm:mb-2">
-                  <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#F58F00]">
+              <div className="hero-countdown-item">
+                <div className="hero-countdown-box">
+                  <span className="hero-countdown-number">
                     {String(timeLeft.seconds).padStart(2, '0')}
                   </span>
                 </div>
-                <span className="text-[10px] sm:text-xs md:text-sm text-white/80 font-medium">SECS</span>
+                <span className="hero-countdown-label">SECS</span>
               </div>
             </div>
 
             {/* Register Button */}
             <a
               href="#registration"
-              className="block w-full bg-[#F58F00] hover:bg-[#F58F00]/90 text-black font-bold text-center py-3 sm:py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-[#F58F00]/50 text-sm sm:text-base md:text-lg"
+              className="hero-register-button"
             >
               Register Now
             </a>
@@ -145,15 +145,13 @@ const Hero = () => {
       </div>
 
       {/* Carousel Indicators */}
-      <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 md:bottom-8 md:right-8 flex gap-2">
+      <div className="hero-carousel-indicators">
         {images.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentImageIndex(index)}
-            className={`h-2 sm:h-3 rounded-full transition-all duration-300 ${
-              index === currentImageIndex
-                ? 'bg-[#F58F00] w-6 sm:w-8'
-                : 'bg-[#F58F00]/50 hover:bg-[#F58F00]/75 w-2 sm:w-3'
+            className={`hero-carousel-indicator ${
+              index === currentImageIndex ? 'active' : ''
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />

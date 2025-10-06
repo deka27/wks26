@@ -12,7 +12,7 @@ import Participants from "./(components)/participants";
 
 export default function Home() {
   return (
-    <div className="bg-black min-h-screen">
+    <div style={{ backgroundColor: 'black', minHeight: '100vh' }}>
       <Navbar />
       <Hero />
       <About />
