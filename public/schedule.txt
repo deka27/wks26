@@ -1,0 +1,297 @@
+.. workshop-schedule::
+
+   .. workshop-timeline::
+      :title: Day 1
+      :subtitle: Preprocessing
+      :date: 2026-03-16
+      :template: _templates/schedule_template.html
+
+      .. workshop-timeline-item::
+         :time: 09:00 - 09:45
+         :title: Workshop Overview
+         :speaker: Eleftherios Garyfallidis
+         :image: garyfallidis.jpg
+
+      .. workshop-timeline-item::
+         :time: 10:00 - 10:45
+         :title: Keynote: TBA
+         :speaker: TBA
+         :image: dipy-all.svg
+
+      .. workshop-timeline-item::
+         :time: 11:00 - 11:45
+         :title: Introduction to DIPY Interfaces
+         :speaker: Serge Koudoro
+         :image: serge.png
+
+      .. workshop-timeline-item::
+         :time: 12:00 - 12:45
+         :title: Lunch Break
+
+      .. workshop-timeline-item::
+         :time: 13:00 - 13:45
+         :title: TBA
+         :speaker: TBA
+         :image: dipy-all.svg
+
+      .. workshop-timeline-item::
+         :time: 14:00 - 14:45
+         :title: Brain Extraction and Tissue Classification
+         :speaker: Jong Sung Park
+         :image: jspark.jpeg
+
+      .. workshop-timeline-item::
+         :time: 15:00 - 15:45
+         :title: Image-based Registration
+         :speaker: Serge Koudoro
+         :image: serge.png
+
+      .. workshop-timeline-item::
+         :time: 16:00 - 16:45
+         :title: Distortion Correction
+         :speaker: Sreekar Chigurupati
+         :image: sreekar.jpeg
+
+      .. workshop-timeline-item::
+         :time: 17:00 - 17:45
+         :title: Denoising with Patch2Self3
+         :speaker: Sai Prajwal Reddy
+         :image: Prajwal.jpeg
+
+      .. workshop-timeline-item::
+         :time: 18:00 - 18:30
+         :title: Study Group Sessions
+         :speaker: All
+         :image: dipy-all.svg
+
+   .. workshop-timeline::
+      :title: Day 2
+      :subtitle: Reconstruction
+      :date: 2025-03-17
+      :template: _templates/schedule_template.html
+
+      .. workshop-timeline-item::
+         :time: 09:00 - 09:45
+         :title: Keynote: TBA
+         :speaker: TBA
+         :image: dipy-all.svg
+
+      .. workshop-timeline-item::
+         :time: 10:00 - 10:45
+         :title: Guided Practice
+         :speaker: Serge Koudoro
+         :image: serge.png
+
+      .. workshop-timeline-item::
+         :time: 11:00 - 11:45
+         :title: Diffusion Tensor and Kurtosis Imaging
+         :speaker: Atharva Shah
+         :image: atharva.png
+
+      .. workshop-timeline-item::
+         :time: 12:00 - 12:45
+         :title: Lunch Break
+
+      .. workshop-timeline-item::
+         :time: 13:00 - 13:45
+         :title: Spherical Harmonic Reconstruction
+         :speaker: Eleftherios Garyfallidis
+         :image: garyfallidis.jpg
+
+      .. workshop-timeline-item::
+         :time: 14:00 - 14:45
+         :title: Model-based Quantification of Microstructural Properties from Diffusion MRI
+         :speaker: Rafael Henriques
+         :image: henriques.jpeg
+
+      .. workshop-timeline-item::
+         :time: 15:00 - 15:45
+         :title: Advanced Diffusion MRI Sequences for Microstructural Quantification
+         :speaker: Rafael Henriques
+         :image: henriques.jpeg
+
+      .. workshop-timeline-item::
+         :time: 16:00 - 16:45
+         :title: Fractal Dimensions for Segmentation
+         :speaker: Aziza Saber Jabdaragh
+         :image: Aziza.jpeg
+
+      .. workshop-timeline-item::
+         :time: 17:00 - 17:45
+         :title: WebGPU Mayhem
+         :speaker: Maharshi Gor
+         :image: maharshi.jpeg
+
+      .. workshop-timeline-item::
+         :time: 18:00 - 18:30
+         :title: E-Posters (Present your work)
+         :speaker: All
+         :image: dipy-all.svg
+
+   .. workshop-timeline::
+      :title: Day 3
+      :subtitle: Tractography
+      :date: 2025-03-18
+      :template: _templates/schedule_template.html
+
+      .. workshop-timeline-item::
+         :time: 09:00 - 09:45
+         :title: TBA
+         :speaker: TBA
+         :image: dipy-all.svg
+
+      .. workshop-timeline-item::
+         :time: 10:00 - 10:45
+         :title: Introduction to computational neuroanatomy
+         :speaker: Wei Tang
+         :image: wei.jpeg
+
+      .. workshop-timeline-item::
+         :time: 11:00 - 11:45
+         :title: Tractography: Principles, Methods and the New Fast Tracking API
+         :speaker: Gabriel Girard
+         :image: girard.png
+
+      .. workshop-timeline-item::
+         :time: 12:00 - 12:45
+         :title: Lunch Break
+
+      .. workshop-timeline-item::
+         :time: 13:00 - 13:45
+         :title: Keynote: TBA
+         :speaker: TBA
+         :image: dipy-all.svg
+
+      .. workshop-timeline-item::
+         :time: 14:00 - 14:45
+         :title: Tractography Segmentation
+         :speaker: Mohamed Abouagour
+         :image: Mohamed.jpg
+
+      .. workshop-timeline-item::
+         :time: 15:00 - 15:45
+         :title: Tractography-based Registration
+         :speaker: Bramsh Qamar Chandio
+         :image: Chandio.jpeg
+
+      .. workshop-timeline-item::
+         :time: 16:00 - 16:45
+         :title: Guided Practice
+         :speaker: Serge Koudoro
+         :image: serge.png
+
+      .. workshop-timeline-item::
+         :time: 17:00 - 17:45
+         :title: E-Posters
+         :speaker: All
+         :image: dipy-all.svg
+
+   .. workshop-timeline::
+      :title: Day 4
+      :subtitle: Tractometry
+      :date: 2025-03-19
+      :template: _templates/schedule_template.html
+
+      .. workshop-timeline-item::
+         :time: 09:00 - 09:45
+         :title: Keynote: TBA
+         :speaker: TBA
+         :image: dipy-all.svg
+
+      .. workshop-timeline-item::
+         :time: 10:00 - 10:45
+         :title: Bundle Analytics
+         :speaker: Bramsh Qamar Chandio
+         :image: Chandio.jpeg
+
+      .. workshop-timeline-item::
+         :time: 11:00 - 11:45
+         :title: Guided Practice
+         :speaker: Bramsh Qamar Chandio
+         :image: Chandio.jpeg
+
+      .. workshop-timeline-item::
+         :time: 12:00 - 12:45
+         :title: Lunch Break
+
+      .. workshop-timeline-item::
+         :time: 13:00 - 13:45
+         :title: New Frontiers in Bundle Analytics
+         :speaker: Ariel Rokem
+         :image: rokem.jpg
+
+      .. workshop-timeline-item::
+         :time: 14:00 - 14:45
+         :title: Deep Learning for Tractography
+         :speaker: Jon Haitz Legarreta
+         :image: JHLegarreta.jpg
+
+      .. workshop-timeline-item::
+         :time: 15:00 - 15:45
+         :title: Keynote : TBA
+         :speaker: TBA
+         :image: dipy-all.svg
+
+      .. workshop-timeline-item::
+         :time: 16:00 - 16:45
+         :title: TBA
+         :speaker: TBA
+         :image: dipy-all.svg
+
+      .. workshop-timeline-item::
+         :time: 17:00 - 17:45
+         :title: Study Group Sessions
+         :speaker: All
+         :image: dipy-all.svg
+
+   .. workshop-timeline::
+      :title: Day 5
+      :subtitle: Mixed Topics
+      :date: 2025-03-20
+      :template: _templates/schedule_template.html
+
+      .. workshop-timeline-item::
+         :time: 09:00 - 09:45
+         :title: Keynote: TBA
+         :speaker: TBA
+         :image: dipy-all.svg
+
+      .. workshop-timeline-item::
+         :time: 10:00 - 10:45
+         :title: Demo Session
+         :speaker: All
+         :image: dipy-all.svg
+
+      .. workshop-timeline-item::
+         :time: 11:00 - 11:45
+         :title: Keynote: TBA
+         :speaker: TBA
+         :image: dipy-all.svg
+
+      .. workshop-timeline-item::
+         :time: 12:00 - 12:45
+         :title: Lunch Break
+
+      .. workshop-timeline-item::
+         :time: 13:00 - 13:45
+         :title: TBA
+         :speaker: TBA
+         :image: dipy-all.svg
+
+      .. workshop-timeline-item::
+         :time: 14:00 - 14:45
+         :title: TBA
+         :speaker: TBA
+         :image: dipy-all.svg
+
+      .. workshop-timeline-item::
+         :time: 15:00 - 15:45
+         :title: TBA
+         :speaker: TBA
+         :image: dipy-all.svg
+
+      .. workshop-timeline-item::
+         :time: 16:00 - 16:45
+         :title: Final Assembly
+         :speaker: TBA
+         :image: dipy-all.svg

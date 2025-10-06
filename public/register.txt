@@ -1,0 +1,69 @@
+############
+Registration
+############
+Get the Early Birds Discount before 3rd January 2026.
+
+.. pricing-list::
+   :template: _templates/pricing_template.html
+   :title: One Price for all to get you started
+   :subtitle: Get the most of the workshop with easy pricing, no hidden fees.
+
+   .. pricing-item::
+      :name: Students, Academic, Professionals
+      :currency: $
+      :price: 500
+      :discount: 650
+      :registration_link: https://iubgrg-fireform.eas.iu.edu/online/form/index/grgdw2026
+
+      - One price for all
+      - Listen to the talks live.
+      - Learn from the experts.
+      - Basic kit for diffusion imaging.
+      - Attend Study Groups.
+      - Present your work.
+      - Complete 5 days of workshop
+      - LinkedIn verifiable certificate.
+
+   .. pricing-item::
+      :name: Returning Participants
+      :currency: $
+      :price: 250
+      :discount: 300
+      :registration_link: https://iubgrg-fireform.eas.iu.edu/online/form/index/grgdw2026
+
+      - Listen to the talks live.
+      - Learn from the experts.
+      - Basic kit for diffusion imaging.
+      - Attend Study Groups.
+      - Present your work.
+      - Complete 5 days of workshop
+      - LinkedIn verifiable certificate.
+
+
+.. pricing-list::
+   :template: _templates/pricing_template.html
+   :title: Optional Packages
+   :subtitle: Need more flexibility? Check out our optional packages.
+
+   .. pricing-item::
+      :name: Recording Access
+      :currency: $
+      :price: 250
+      :discount: 350
+      :registration_link: https://iubgrg-fireform.eas.iu.edu/online/form/index/grgdw2026
+
+      - Only accessible if you register for the workshop.
+      - Access to talks during and after the workshop.
+      - Access to materials during and after the workshop.
+
+   .. pricing-item::
+      :name: Coaching Package
+      :currency: $
+      :price: 500
+      :discount: 750
+      :registration_link: https://iubgrg-fireform.eas.iu.edu/online/form/index/grgdw2026
+
+      - Only accessible if you register for the workshop.
+      - Deep Dive into your data and project with expert guidance.
+      - Up to 3 one-hour 1:1 with DIPY developers.
+      - A Discount Year-long support option available.
